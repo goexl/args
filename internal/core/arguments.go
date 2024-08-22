@@ -11,8 +11,6 @@ import (
 type Arguments struct {
 	params    *param.Arguments
 	arguments *[]any
-
-	_ gox.Pointerized
 }
 
 func NewArguments(params *param.Arguments, arguments *[]any) *Arguments {
