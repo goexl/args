@@ -6,11 +6,11 @@ import (
 )
 
 type Builder struct {
-	params    *param.Creator
+	params    *param.Arguments
 	arguments *[]any
 }
 
-func NewBuilder(params *param.Creator, arguments *[]any) *Builder {
+func NewBuilder(params *param.Arguments, arguments *[]any) *Builder {
 	return &Builder{
 		params:    params,
 		arguments: arguments,

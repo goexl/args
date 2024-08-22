@@ -5,7 +5,7 @@ import (
 )
 
 type Creator struct {
-	params    *param.Creator
+	params    *param.Arguments
 	arguments []any
 }
 

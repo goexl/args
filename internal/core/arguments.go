@@ -9,13 +9,13 @@ import (
 )
 
 type Arguments struct {
-	params    *param.Creator
+	params    *param.Arguments
 	arguments *[]any
 
-	_ gox.CannotCopy
+	_ gox.Pointerized
 }
 
-func NewArguments(params *param.Creator, arguments *[]any) *Arguments {
+func NewArguments(params *param.Arguments, arguments *[]any) *Arguments {
 	return &Arguments{
 		params:    params,
 		arguments: arguments,
